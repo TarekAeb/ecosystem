@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
 import type { Media, MediaCategory } from '../types';
 
@@ -7,14 +8,24 @@ interface MediaCardProps {
 }
 
 const MediaCard = ({ media, category }: MediaCardProps) => {
+  const [imageError, setImageError] = useState(false);
+  const showImage = media.image && !imageError;
+
   return (
     <article className="group relative bg-card rounded-2xl border border-border/60 p-6 transition-all duration-300 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1">
       <div className="flex items-start gap-4 mb-5">
-        {category && (
-          <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary/40 flex items-center justify-center text-2xl" aria-label={category.name}>
+        {showImage ? (
+          <img
+            src={media.image}
+            alt={`${media.title} icon`}
+            className="flex-shrink-0 w-12 h-12 rounded-xl object-cover bg-secondary/40"
+            onError={() => setImageError(true)}
+          />
+        ) : category ? (
+          <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary/40 flex items-center justify-center text-3xl" aria-label={category.name}>
             {category.icon}
           </div>
-        )}
+        ) : null}
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-2">
             <h3 className="font-bold text-lg text-card-foreground truncate group-hover:text-primary transition-colors duration-300">
@@ -44,4 +55,3 @@ const MediaCard = ({ media, category }: MediaCardProps) => {
 };
 
 export default MediaCard;
-

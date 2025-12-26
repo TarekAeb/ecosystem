@@ -19,7 +19,7 @@ const MediaGrid = ({ media, categories, onClearFilters }: MediaGridProps) => {
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {media.map((item, index) => (
         <div
-          key={item.id}
+          key={item.id ?? `${item.title}-${index}`}
           className="animate-fade-in"
           style={{ animationDelay: `${index * 50}ms` }}
         >

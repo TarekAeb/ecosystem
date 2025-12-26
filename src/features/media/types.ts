@@ -5,10 +5,11 @@ export interface MediaCategory {
 }
 
 export interface Media {
-  id: number;
+  id?: number;
   title: string;
   categoryId: number;
   description: string;
   url: string;
+  image?: string;
 }
 
