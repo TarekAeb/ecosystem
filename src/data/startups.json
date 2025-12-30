@@ -354,5 +354,52 @@
     "categoryId": "saas",
     "website": "https://fatoura.app",
     "linkedin": "https://www.linkedin.com/company/fatoura-app"
+  },
+  {
+    "name": "AI GRID",
+    "foundedYear": 2025,
+    "categoryId": "ai",
+    "website": "https://ai-grid.io",
+    "linkedin": "https://www.linkedin.com/company/ai-grid-io"
+  },
+  {
+    "name": "Bassit",
+    "foundedYear": 2020,
+    "categoryId": "saas",
+    "website": "https://bassit-app.com"
+  },
+  {
+    "name": "Layyali",
+    "foundedYear": 2024,
+    "categoryId": "saas",
+    "website": "https://layyali.com",
+    "linkedin": "https://www.linkedin.com/company/layyali"
+  },
+  {
+    "name": "H24Voyages",
+    "foundedYear": 2019,
+    "categoryId": "saas",
+    "website": "https://www.h24voyages.com"
+  },
+  {
+    "name": "BDigitAll",
+    "foundedYear": 2022,
+    "categoryId": "saas",
+    "website": "https://bdigitall.co",
+    "linkedin": "https://www.linkedin.com/company/bdigitall"
+  },
+  {
+    "name": "ScanEvent",
+    "foundedYear": 2025,
+    "categoryId": "saas",
+    "website": "https://www.scanevent.net",
+    "linkedin": "https://www.linkedin.com/company/scanevent"
+  },
+  {
+    "name": "Nafsia Clinic",
+    "foundedYear": 2023,
+    "categoryId": "healthtech",
+    "website": "https://nafsiaclinic.com",
+    "linkedin": "https://www.linkedin.com/company/eurl-nafsia-clinic"
   }
 ]
