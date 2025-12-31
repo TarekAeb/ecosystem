@@ -12,6 +12,7 @@ import Jobs from "@/features/jobs/pages/Index";
 import Communities from "@/features/communities/pages/Index";
 import Events from "@/features/events/pages/Index";
 import Resources from "@/features/resources/pages/Index";
+import About from "@/shared/pages/About";
 import NotFound from "@/shared/pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/communities" element={<Communities />} />
           <Route path="/events" element={<Events />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -9,7 +9,7 @@ const Footer = () => {
         </p>
         <div className="flex items-center justify-center gap-4 flex-wrap">
           <a
-            href="https://github.com/dz-ecosystem/startup-directory"
+            href="https://github.com/algeria-ecosystem/ecosystem"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-muted-foreground hover:text-foreground transition-colors"

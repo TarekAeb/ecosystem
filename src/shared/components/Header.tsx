@@ -1,4 +1,4 @@
-import { Rocket, Building2, Zap, Users, Radio, Briefcase, MessageCircle, Calendar, BookOpen, Plus } from 'lucide-react';
+import { Rocket, Building2, Zap, Users, Radio, Briefcase, MessageCircle, Calendar, BookOpen, Info, Plus } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
@@ -23,6 +23,7 @@ const Header = ({
     { path: '/communities', label: 'Communities', icon: MessageCircle },
     { path: '/events', label: 'Events', icon: Calendar },
     { path: '/resources', label: 'Resources', icon: BookOpen },
+    { path: '/about', label: 'About', icon: Info },
   ];
 
   return (
@@ -67,17 +68,19 @@ const Header = ({
       </p>
       
       {/* Contribution CTA */}
-      <div className="mt-4 sm:mt-5 px-4">
-        <a
-          href="https://forms.gle/AiACXXFWwA1inGPJA"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs sm:text-sm text-primary hover:bg-primary/10 font-medium transition-colors"
-        >
-          <Plus className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-          <span>Submit Data</span>
-        </a>
-      </div>
+      {location.pathname !== '/about' && (
+        <div className="mt-4 sm:mt-5 px-4">
+          <a
+            href="https://forms.gle/AiACXXFWwA1inGPJA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs sm:text-sm text-primary hover:bg-primary/10 font-medium transition-colors"
+          >
+            <Plus className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+            <span>Submit Data</span>
+          </a>
+        </div>
+      )}
     </header>
   );
 };
