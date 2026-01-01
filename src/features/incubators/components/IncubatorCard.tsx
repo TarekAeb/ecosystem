@@ -23,7 +23,7 @@ const IncubatorCard = ({ incubator }: IncubatorCardProps) => {
     <article className="group relative bg-card rounded-2xl border border-border/60 p-6 transition-all duration-300 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1">
       <div className="flex items-start gap-4 mb-5">
         {imageError ? (
-          <div className="flex-shrink-0 w-16 h-16 rounded-xl bg-secondary/40 flex items-center justify-center">
+          <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-secondary/40 flex items-center justify-center">
             <span className="text-xl font-bold text-primary">{incubator.name.charAt(0).toUpperCase()}</span>
           </div>
         ) : (
